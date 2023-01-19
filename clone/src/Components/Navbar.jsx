@@ -45,10 +45,9 @@ function Navbar() {
             src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1537798844_try-logo-3x.png"
             boxSize={{ base: "md", lg: "10" }}
           />
-          <Square></Square>
         </HStack>
       </Box>
-      <Spacer/>
+      <Spacer />
       <Box>
         <HStack>
           <Square>
