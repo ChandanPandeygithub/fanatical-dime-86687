@@ -1,0 +1,142 @@
+*{
+    list-style-type:none;
+    color:black;
+    margin: 0px;
+    box-sizing: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    
+}
+
+.searchBar2{
+display: none;
+}
+.megamenu{
+    position: sticky;
+    top:3px;
+    background-color:white;
+     /* justify-content: space-between; 
+     align-items: center;
+    align-content: center; */
+    height:4rem;
+    /* z-index: 1; */
+}
+.cancel{
+    display: block;
+}
+.ToggleSearchIcon{
+  display: block;
+}
+  .expandSearchBar{
+    /* color: red; */
+    position: absolute;
+    left: 0px;
+    top: 105%;
+  width: 100%;
+  height: 500px;
+  background-color:#fff;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+   padding: 2%;
+   /* background-color: red; */
+  }
+  input:focus{
+    /* background-color:white; */
+    color: red;
+  }
+.megamenuitem{
+    position:absolute;
+    left: 0px;
+    top: 100%;
+    width: 100%;
+    /* z-index: 2; */
+    padding:0.5%;
+    border-top: 0.5px solid #c9d5d5;
+    border-bottom: 0.5px solid #c9d5d5;
+    /* height: 50px; */
+    /* background-color: inherit; */ 
+}
+.megamenuitemBoxChild{
+  position: absolute;
+  top: 101%;
+  left:0px;
+  width: 100%;
+  background-color:blue;
+  justify-content: space-around;
+   align-items: center;
+   align-content: center;
+}
+.MegaMenuItemBox:hover>.megamenuitemBoxChild{
+   display: flex;
+}
+/* .HoverMegaMenuItem{
+}
+.InMegaMenuItem{
+}
+.HoverMegaMenuItem:hover .InMegaMenuItem{
+  position:absolute;
+  left: 0px;
+  top: 102%;
+  width: 100%;
+  z-index: 2;
+  padding:0.5%;
+  border-top: 0.5px solid #c9d5d5;
+ height: 500px;
+ background-color: red;
+} */
+.ctgryBtn::before{
+content: '';
+position:absolute;
+top:101%;
+width: 100%;
+height: 2px;
+background-color: blue;
+transition: transform 1s ease-in-out ;
+transform-origin: right;
+transform: scale(0);
+}
+.ctgryBtn:hover::before{
+transform: scale(1);
+transform-origin: left;
+
+}
+/* .thre{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background-color: black;
+} */
+/*
+<HStack 
+       className={`${style.megamenuitem}`}
+      id={"three"}  
+       className={`${style.megamenuitem}`}
+style={{display:"flex",justifyContent:"space-around",alignContent:"center",alignItems:"center"}}
+
+      >
+        <Button >one</Button>
+        <Button >two</Button>
+        <Button >three</Button>
+        <Button >four</Button>
+        <Button >five</Button>
+      </HStack>
+ justifyContent:"space-around";
+    alignItems:"center";
+    alignContent:"center" */
+
+/*
+<ButtonGroup size='sm' isAttached variant='outline'>
+
+<IconButton aria-label='Add to friends' icon={<FcGenericSortingDesc/>} />
+<IconButton aria-label='Add to friends' icon={<FcGenericSortingDesc/>} />
+</ButtonGroup>
+ <Button size={{base:"sm",md:"md"}} leftIcon={<BsEmojiSmile/>}  colorScheme='whiteAlpha' variant='solid'>
+  
+    <Icon as={FcGenericSortingDesc} boxSize={{base:8,md:10}} />
+    </Button>
+*/
